@@ -1,81 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moflinks Solutions Inc | Healthcare Data Analytics Experts</title>
-  <meta name="description" content="Moflinks Solutions Inc is a leading healthcare data analytics startup transforming insights into impact.">
-  <meta name="keywords" content="Moflinks, healthcare analytics, data science, health tech, cloud, software development">
-  <meta name="author" content="Moflinks Solutions Inc">
-  <meta property="og:title" content="Moflinks Solutions Inc">
-  <meta property="og:description" content="Empowering healthcare with data-driven innovation.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yourdomain.github.io">
-  <meta property="og:image" content="https://yourdomain.github.io/og-image.jpg">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Moflinks Solutions - Healthcare Data Analytics Company. Optimizing Care Through Data.">
+<meta name="keywords" content="healthcare analytics, data analytics, healthcare solutions, medical data">
+<title>Moflinks Solutions - Healthcare Data Analytics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#1E5F74',
+secondary: '#27AE60'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+</style>
 </head>
-<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: white; color: black;">
+<body class="bg-white text-gray-800">
+<header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+<nav class="flex items-center justify-between px-6 h-16">
+<a href="#" class="font-['Pacifico'] text-2xl text-primary">logo</a>
+<div class="hidden md:flex items-center space-x-8">
+<a href="#about" class="text-gray-600 hover:text-primary">About</a>
+<a href="#values" class="text-gray-600 hover:text-primary">Values</a>
+<a href="#solutions" class="text-gray-600 hover:text-primary">Solutions</a>
+<a href="#contact" class="text-gray-600 hover:text-primary">Contact</a>
+<button class="bg-primary text-white px-6 py-2 !rounded-button whitespace-nowrap hover:bg-primary/90">Get Started</button>
+</div>
+<button class="md:hidden w-10 h-10 flex items-center justify-center">
+<i class="ri-menu-line text-xl"></i>
+</button>
+</nav>
+</header>
+<main>
+<section class="relative min-h-screen flex items-center" style="background-image: url('https://readdy.ai/api/search-image?query=modern%20healthcare%20technology%20environment%20with%20soft%20blue%20and%20white%20tones%2C%20featuring%20a%20clean%20and%20minimalist%20workspace%20with%20advanced%20medical%20displays%20and%20analytics%20dashboards%2C%20left%20side%20has%20a%20clean%20gradient%20transition%20to%20white%20background%20for%20text%20placement&width=1920&height=1080&seq=1&orientation=landscape'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-gradient-to-r from-white/90 to-white/30"></div>
+<div class="container mx-auto px-6 relative">
+<div class="max-w-2xl">
+<h1 class="text-5xl font-bold mb-6 text-gray-900">Transform Healthcare with Data-Driven Insights</h1>
+<p class="text-xl text-gray-700 mb-8">Empowering healthcare providers with advanced analytics solutions to optimize patient care and improve outcomes.</p>
+<div class="flex flex-wrap gap-4">
+<button id="scheduleDemo" class="bg-primary text-white px-8 py-3 !rounded-button whitespace-nowrap text-lg hover:bg-primary/90">Schedule Demo</button>
 
-  <header style="display: flex; justify-content: space-between; align-items: center; background-color: black; padding: 20px; color: white;">
-    <div style="font-size: 24px; font-weight: bold;">Moflinks Solutions</div>
-    <nav aria-label="Main navigation">
-      <ul style="list-style: none; display: flex; margin: 0; padding: 0;">
-        <li style="margin: 0 15px;"><a href="#about" style="text-decoration: none; color: white;">About</a></li>
-        <li style="margin: 0 15px;"><a href="#services" style="text-decoration: none; color: white;">Services</a></li>
-        <li style="margin: 0 15px;"><a href="#contact" style="text-decoration: none; color: white;">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section style="text-align: center; padding: 100px 20px; background-color: blue; color: white;">
-      <h1>Innovating the Future of Healthcare</h1>
-      <p>Your trusted technology partner, delivering cutting-edge data analytics solutions.</p>
-      <a href="#contact" style="display: inline-block; background-color: white; color: blue; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 5px;">Get in Touch</a>
-    </section>
-
-    <section id="about" style="padding: 60px 20px; text-align: center;">
-      <h2>About Us</h2>
-      <p>Moflinks Solutions Inc is a forward-thinking healthcare data analytics company committed to delivering high-quality innovations that empower health providers, researchers, and policymakers.</p>
-    </section>
-
-    <section id="services" style="padding: 60px 20px; text-align: center;">
-      <h2>Our Services</h2>
-      <div style="display: inline-block; width: 30%; margin: 10px; padding: 20px; border: 2px solid black;">
-        <h3>Data Analytics</h3>
-        <p>Unlocking insights through powerful health data processing and predictive analytics.</p>
+<div id="demoModal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
+  <div class="bg-white rounded-lg w-full max-w-md p-6 relative">
+    <button id="closeModal" class="absolute right-4 top-4 text-gray-500 hover:text-gray-700">
+      <i class="ri-close-line text-xl"></i>
+    </button>
+    
+    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Schedule a Demo</h3>
+    
+    <form id="demoForm" class="space-y-4">
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+        <input type="text" id="demoName" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
       </div>
-      <div style="display: inline-block; width: 30%; margin: 10px; padding: 20px; border: 2px solid black;">
-        <h3>IT Consulting</h3>
-        <p>Expert guidance to streamline healthcare IT infrastructure and improve outcomes.</p>
+      
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+        <input type="email" id="demoEmail" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
       </div>
-      <div style="display: inline-block; width: 30%; margin: 10px; padding: 20px; border: 2px solid black;">
-        <h3>Cloud Solutions</h3>
-        <p>Secure and scalable cloud services for health systems and research institutions.</p>
+      
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Company Name</label>
+        <input type="text" id="demoCompany" name="company" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
       </div>
-    </section>
+      
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Preferred Date</label>
+        <input type="date" id="demoDate" name="date" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
+      </div>
+      
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Preferred Time</label>
+        <input type="time" id="demoTime" name="time" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
+      </div>
+      
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Area of Interest</label>
+        <div class="relative">
+          <select id="demoInterest" name="interest" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary appearance-none pr-10">
+            <option value="">Select an area</option>
+            <option value="clinical">Clinical Analytics</option>
+            <option value="operational">Operational Intelligence</option>
+            <option value="patient">Patient Engagement</option>
+            <option value="all">All Solutions</option>
+          </select>
+          <i class="ri-arrow-down-s-line absolute right-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+        </div>
+      </div>
+      
+      <button type="submit" class="w-full bg-primary text-white px-6 py-3 !rounded-button font-semibold hover:bg-primary/90">Submit Request</button>
+    </form>
+  </div>
+</div>
+<button class="bg-white border-2 border-primary text-primary px-8 py-3 !rounded-button whitespace-nowrap text-lg hover:bg-gray-50">Learn More</button>
+</div>
+</div>
+</div>
+</section>
+<section id="about" class="py-24 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="max-w-3xl mx-auto text-center mb-16">
+<h2 class="text-3xl font-bold mb-6">Revolutionizing Healthcare Analytics</h2>
+<p class="text-gray-600">We combine cutting-edge technology with healthcare expertise to deliver actionable insights that improve patient outcomes and operational efficiency.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-lg shadow-sm">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+<i class="ri-line-chart-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Predictive Analytics</h3>
+<p class="text-gray-600">Leverage machine learning to forecast patient needs and optimize resource allocation.</p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-sm">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+<i class="ri-shield-check-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Data Security</h3>
+<p class="text-gray-600">Enterprise-grade security measures to protect sensitive healthcare information.</p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-sm">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+<i class="ri-group-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Patient-Centric</h3>
+<p class="text-gray-600">Focus on improving patient experience and outcomes through data-driven decisions.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="values" class="py-24">
+<div class="container mx-auto px-6">
+<div class="max-w-3xl mx-auto text-center mb-16">
+<h2 class="text-3xl font-bold mb-6">Our Core Values</h2>
+<p class="text-gray-600">Guided by principles that prioritize excellence in healthcare analytics.</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-lg border border-gray-100">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+<i class="ri-lightbulb-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Innovation</h3>
+<p class="text-gray-600">Continuously pushing boundaries in healthcare analytics technology.</p>
+</div>
+<div class="bg-white p-8 rounded-lg border border-gray-100">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+<i class="ri-team-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Collaboration</h3>
+<p class="text-gray-600">Working together to achieve better healthcare outcomes.</p>
+</div>
+<div class="bg-white p-8 rounded-lg border border-gray-100">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+<i class="ri-shield-star-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Integrity</h3>
+<p class="text-gray-600">Maintaining the highest standards of professional ethics.</p>
+</div>
+<div class="bg-white p-8 rounded-lg border border-gray-100">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+<i class="ri-heart-pulse-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Ethics</h3>
+<p class="text-gray-600">Upholding ethical principles in all our operations.</p>
+</div>
+<div class="bg-white p-8 rounded-lg border border-gray-100">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+<i class="ri-shield-check-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Prevention Focused</h3>
+<p class="text-gray-600">Emphasizing proactive healthcare management.</p>
+</div>
+<div class="bg-white p-8 rounded-lg border border-gray-100">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+<i class="ri-user-heart-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Individualized Care</h3>
+<p class="text-gray-600">Tailoring solutions to individual patient needs.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="solutions" class="py-24 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="max-w-3xl mx-auto text-center mb-16">
+<h2 class="text-3xl font-bold mb-6">Our Solutions</h2>
+<p class="text-gray-600">Comprehensive analytics solutions designed for modern healthcare challenges.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white rounded-lg overflow-hidden shadow-sm">
+<div class="h-48 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=modern%20medical%20dashboard%20interface%20with%20clean%20design%2C%20showing%20patient%20data%20analytics%20and%20health%20metrics%20on%20a%20professional%20display%20screen%20with%20blue%20accent%20colors&width=600&height=400&seq=2&orientation=landscape')"></div>
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-4">Clinical Analytics</h3>
+<p class="text-gray-600 mb-6">Advanced analytics tools for clinical decision support and patient outcome optimization.</p>
+<button class="text-primary font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+Learn More
+<i class="ri-arrow-right-line"></i>
+</button>
+</div>
+</div>
+<div class="bg-white rounded-lg overflow-hidden shadow-sm">
+<div class="h-48 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=healthcare%20operational%20efficiency%20dashboard%20showing%20hospital%20resource%20management%20and%20staff%20scheduling%20interface%20with%20clean%20modern%20design&width=600&height=400&seq=3&orientation=landscape')"></div>
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-4">Operational Intelligence</h3>
+<p class="text-gray-600 mb-6">Streamline operations and improve resource utilization with data-driven insights.</p>
+<button class="text-primary font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+Learn More
+<i class="ri-arrow-right-line"></i>
+</button>
+</div>
+</div>
+<div class="bg-white rounded-lg overflow-hidden shadow-sm">
+<div class="h-48 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=patient%20engagement%20platform%20interface%20showing%20personalized%20health%20recommendations%20and%20communication%20tools%20with%20modern%20medical%20design&width=600&height=400&seq=4&orientation=landscape')"></div>
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-4">Patient Engagement</h3>
+<p class="text-gray-600 mb-6">Enhance patient experience with personalized communication and care management.</p>
+<button class="text-primary font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+Learn More
+<i class="ri-arrow-right-line"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="py-24 bg-primary text-white">
+<div class="container mx-auto px-6">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+<p class="text-white/80">Ready to transform your healthcare analytics? Let's start a conversation.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-12">
+<div>
+<h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
+<i class="ri-map-pin-line"></i>
+</div>
+<div>
+<p>123 Innovation Drive</p>
+<p>San Francisco, CA 94105</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
+<i class="ri-phone-line"></i>
+</div>
+<p>+1 (415) 555-0123</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
+<i class="ri-mail-line"></i>
+</div>
+<p>contact@moflinks.com</p>
+</div>
+</div>
+</div>
+<form class="space-y-4">
+<input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60">
+<input type="email" placeholder="Email Address" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60">
+<textarea rows="4" placeholder="Message" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60"></textarea>
+<button type="submit" class="w-full bg-white text-primary px-6 py-3 !rounded-button font-semibold hover:bg-white/90">Send Message</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-gray-900 text-white py-12">
+<div class="container mx-auto px-6">
+<div class="grid md:grid-cols-4 gap-8">
+<div>
+<a href="#" class="font-['Pacifico'] text-2xl mb-6 block">logo</a>
+<p class="text-gray-400">Transforming healthcare through advanced analytics and data-driven solutions.</p>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a href="#about" class="text-gray-400 hover:text-white">About Us</a></li>
+<li><a href="#solutions" class="text-gray-400 hover:text-white">Solutions</a></li>
+<li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Legal</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Cookie Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Connect</h4>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-white/20">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-white/20">
+<i class="ri-twitter-x-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-white/20">
+<i class="ri-facebook-fill"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+<p>&copy; 2025 Moflinks Solutions. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.querySelector('button.md\\:hidden');
+const nav = document.querySelector('nav div.hidden');
+const modal = document.getElementById('demoModal');
+const openModalBtn = document.getElementById('scheduleDemo');
+const closeModalBtn = document.getElementById('closeModal');
+const demoForm = document.getElementById('demoForm');
 
-    <section id="contact" style="padding: 60px 20px; text-align: center;">
-      <h2>Contact Us</h2>
-      <p>Let's discuss how we can take your healthcare innovation to the next level.</p>
-      <form>
-        <label for="name" style="display: none;">Your Name</label>
-        <input id="name" type="text" placeholder="Your Name" required style="width: 80%; padding: 10px; margin: 10px; border: 1px solid black;">
+openModalBtn.addEventListener('click', () => {
+  modal.classList.remove('hidden');
+  modal.classList.add('flex');
+  document.body.style.overflow = 'hidden';
+});
 
-        <label for="email" style="display: none;">Your Email</label>
-        <input id="email" type="email" placeholder="Your Email" required style="width: 80%; padding: 10px; margin: 10px; border: 1px solid black;">
+closeModalBtn.addEventListener('click', () => {
+  modal.classList.add('hidden');
+  modal.classList.remove('flex');
+  document.body.style.overflow = '';
+});
 
-        <label for="message" style="display: none;">Your Message</label>
-        <textarea id="message" placeholder="Your Message" required style="width: 80%; padding: 10px; margin: 10px; border: 1px solid black;"></textarea>
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.body.style.overflow = '';
+  }
+});
 
-        <button type="submit" style="background-color: black; color: white; padding: 10px 20px; border: none; cursor: pointer;">Send Message</button>
-      </form>
-    </section>
-  </main>
-
-  <footer style="text-align: center; padding: 20px; background-color: black; color: white;">
-    <p>&copy; 2025 Moflinks Solutions Inc. All rights reserved.</p>
-  </footer>
-
+demoForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const formData = new FormData(demoForm);
+  const data = Object.fromEntries(formData);
+  
+  const successMessage = document.createElement('div');
+  successMessage.className = 'fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg';
+  successMessage.textContent = 'Demo request submitted successfully!';
+  document.body.appendChild(successMessage);
+  
+  setTimeout(() => {
+    successMessage.remove();
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.body.style.overflow = '';
+    demoForm.reset();
+  }, 3000);
+});
+mobileMenuButton.addEventListener('click', function() {
+nav.classList.toggle('hidden');
+nav.classList.toggle('absolute');
+nav.classList.toggle('top-16');
+nav.classList.toggle('left-0');
+nav.classList.toggle('right-0');
+nav.classList.toggle('bg-white');
+nav.classList.toggle('p-4');
+nav.classList.toggle('flex');
+nav.classList.toggle('flex-col');
+nav.classList.toggle('items-start');
+nav.classList.toggle('space-y-4');
+});
+});
+</script>
 </body>
 </html>
